@@ -28,6 +28,7 @@ public class MoveController : MonoBehaviour
         if(Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
         {
             animator.SetBool("Back", true);
+            transform.position -= transform.forward * 0.01f;
         }
         else
         {
